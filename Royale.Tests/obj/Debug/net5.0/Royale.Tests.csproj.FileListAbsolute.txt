@@ -99,3 +99,5 @@ C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.T
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.Tests\obj\Debug\net5.0\ref\Royale.Tests.dll
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.Tests\obj\Debug\net5.0\Royale.Tests.pdb
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.Tests\obj\Debug\net5.0\Royale.Tests.genruntimeconfig.cache
+C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.Tests\bin\Debug\net5.0\WebDriver.Support.dll
+C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale.Tests\bin\Debug\net5.0\WebDriver.dll

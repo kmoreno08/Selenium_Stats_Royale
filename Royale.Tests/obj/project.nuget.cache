@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n/E7t1g28Bt1ZnuN6tbvn718SXTveJ0F8f0T7FkrgpodKQo2fHWtl8r0I4SrSvm4h5vjGs0nbaFPJsX4S+hq9A==",
+  "dgSpecHash": "bEa6aOMmQ6vxGW4tpZEuHqAyvsJrIYjbVRkQLwhJ1w2OKtjjcV8NvB0HIfBnulBHJd0RVJ4mtCm3U+UmzJiz4A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin Steven Moreno\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Kevin Steven Moreno\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

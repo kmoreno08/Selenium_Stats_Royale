@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj": {}
+    "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj": {
+    "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
         "projectName": "Royale.Tests",
-        "projectPath": "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
+        "projectPath": "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\Royale.Tests.csproj",
         "packagesPath": "C:\\Users\\Kevin Steven Moreno\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Kevin Steven Moreno\\Desktop\\importantCode\\Selenium\\StatsRoyale\\Royale.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
