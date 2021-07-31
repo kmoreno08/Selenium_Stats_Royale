@@ -2,11 +2,14 @@ C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\b
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\bin\Debug\net5.0\Royale.dll
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\bin\Debug\net5.0\ref\Royale.dll
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\bin\Debug\net5.0\Royale.pdb
+C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\bin\Debug\net5.0\Framework.dll
+C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\bin\Debug\net5.0\Framework.pdb
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.csproj.AssemblyReference.cache
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.AssemblyInfoInputs.cache
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.AssemblyInfo.cs
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.csproj.CopyComplete
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.dll
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\ref\Royale.dll
 C:\Users\Kevin Steven Moreno\Desktop\importantCode\Selenium\StatsRoyale\Royale\obj\Debug\net5.0\Royale.pdb
