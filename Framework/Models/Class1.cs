@@ -2,7 +2,7 @@
 
 namespace Framework
 {
-    public class Class1
+    public class MirrorCard
     {
     }
 }
