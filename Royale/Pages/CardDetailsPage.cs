@@ -19,6 +19,18 @@ namespace Royale.Pages
       return (categories[0].Trim(), categories[1].Trim());
     }
 
+    public Card GetBaseCard()
+    {
+      var (category, arena) = GetCardCategory();
+
+      return new Card
+      {
+        Name = Map.CardName.Text,
+        Rarity = Map.CardRarity.Text.Split('\n').Last(), Type = category, 
+        Arena = arena
+      }
+    }
+
 
   }
 

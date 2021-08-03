@@ -343,13 +343,17 @@ namespace Royale.Tests
             driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // Call method to split name and rarity in correct forms
-            var (category, arena) = cardDetails.GetCardCategory();
-            var cardName = cardDetails.Map.CardName.Text;
+            //var (category, arena) = cardDetails.GetCardCategory();
+            //var cardName = cardDetails.Map.CardName.Text;
             //var cardRarityEpic = cardDetails.Map.CardRarityEpic.Text;
+
+            var card = cardDetails.GetbaseCard();
+            var mirror = new MirrorCard();
+
             // Assert to make sure everything is correct for Mirror
-            Assert.AreEqual("Mirror", cardName);
-            Assert.AreEqual("Spell", category);
-            Assert.AreEqual("Arena 12", arena);
+            Assert.AreEqual(mirror.Name, card.Name);
+            Assert.AreEqual(mirror.Type, card.Type);
+            Assert.AreEqual(mirror.Arena, card.Arena);
             //Assert.AreEqual("Epic", cardRarityEpic);
         }
     }
