@@ -31,7 +31,7 @@ namespace Royale.Tests
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Maximize screen
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // click cards link in header nav
       var cardsPage = new CardsPage(driver);
@@ -40,7 +40,7 @@ namespace Royale.Tests
       // Go to cards page and  Get card by name
       var iceSpirit = cardsPage.GoTo().GetCardByName("Ice+Spirit");
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Test to see if Ice spirit is displayed
@@ -53,13 +53,13 @@ namespace Royale.Tests
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Click on Ice Spirit and get card details
       new CardsPage(driver).GoTo().GetCardByName("Ice+Spirit").Click();
       var cardDetails = new CardDetailsPage(driver);
       //Fullscreen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Call method to split name and rarity in correct forms
       var (category, arena) = cardDetails.GetCardCategory();
@@ -78,7 +78,7 @@ namespace Royale.Tests
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Maximize screen
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // click cards link in header nav
       var cardsPage = new CardsPage(driver);
@@ -87,7 +87,7 @@ namespace Royale.Tests
       // Go to cards page and  Get card by name
       var electroGiant = cardsPage.GoTo().GetCardByName("Electro+Giant");
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Test to see if Electro Giant is displayed
@@ -100,13 +100,13 @@ namespace Royale.Tests
 
       Thread.Sleep(4000);
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Click on Electro Giant and get card details
       new CardsPage(driver).GoTo().GetCardByName("Electro+Giant").Click();
       var cardDetails = new CardDetailsPage(driver);
       //Fullscreen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Call method to split name and rarity in correct forms
       var (category, arena) = cardDetails.GetCardCategory();
@@ -125,7 +125,7 @@ namespace Royale.Tests
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Maximize screen
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // click cards link in header nav
       var cardsPage = new CardsPage(driver);
@@ -134,7 +134,7 @@ namespace Royale.Tests
       // Go to cards page and  Get card by name
       var mortar = cardsPage.GoTo().GetCardByName("Mortar");
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       // Wait 4 seconds
       Thread.Sleep(4000);
       // Test to see if Mortar is displayed
@@ -146,13 +146,13 @@ namespace Royale.Tests
     {
       Thread.Sleep(4000);
       // Maximize screen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Click on Mortar and get card details
       new CardsPage(driver).GoTo().GetCardByName("Mortar").Click();
       var cardDetails = new CardDetailsPage(driver);
       //Fullscreen and 4 second wait time
-      driver.Manage().Window.FullScreen();
+      driver.Manage().Window.Maximize();
       Thread.Sleep(4000);
       // Call method to split name and rarity in correct forms
       var (category, arena) = cardDetails.GetCardCategory();
@@ -172,7 +172,7 @@ namespace Royale.Tests
         // Wait 4 seconds
          Thread.Sleep(4000);
          // Maximize screen
-         driver.Manage().Window.FullScreen();
+         driver.Manage().Window.Maximize();
          Thread.Sleep(4000);
          // click cards link in header nav
          var cardsPage = new CardsPage(driver);
@@ -181,7 +181,7 @@ namespace Royale.Tests
          // Go to cards page and  Get card by name
          var bombTower = cardsPage.GoTo().GetCardByName("Bomb+Tower");
          // Maximize screen and 4 second wait time
-         driver.Manage().Window.FullScreen();
+         driver.Manage().Window.Maximize();
          // Wait 4 seconds
          Thread.Sleep(4000);
          // Test to see if Mortar is displayed
@@ -193,13 +193,13 @@ namespace Royale.Tests
         {
             Thread.Sleep(4000);
             // Maximize screen and 4 second wait time
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // Click on Mortar and get card details
             new CardsPage(driver).GoTo().GetCardByName("Bomb+Tower").Click();
             var cardDetails = new CardDetailsPage(driver);
             //Fullscreen and 4 second wait time
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // Call method to split name and rarity in correct forms
             var (category, arena) = cardDetails.GetCardCategory();
@@ -218,7 +218,7 @@ namespace Royale.Tests
             // Wait 4 seconds
             Thread.Sleep(4000);
             // Maximize screen
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // click cards link in header nav
             var cardsPage = new CardsPage(driver);
@@ -227,10 +227,10 @@ namespace Royale.Tests
             // Go to cards page and  Get card by name
             var rocket = cardsPage.GoTo().GetCardByName("Rocket");
             // Maximize screen and 4 second wait time
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             // Wait 4 seconds
             Thread.Sleep(4000);
-            // Test to see if Mortar is displayed
+            // Test to see if Rocket is displayed
             Assert.That(rocket.Displayed);
         }
 
@@ -239,23 +239,70 @@ namespace Royale.Tests
         {
             Thread.Sleep(4000);
             // Maximize screen and 4 second wait time
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // Click on Rocket and get card details
             new CardsPage(driver).GoTo().GetCardByName("Rocket").Click();
             var cardDetails = new CardDetailsPage(driver);
             //Fullscreen and 4 second wait time
-            driver.Manage().Window.FullScreen();
+            driver.Manage().Window.Maximize();
             Thread.Sleep(4000);
             // Call method to split name and rarity in correct forms
             var (category, arena) = cardDetails.GetCardCategory();
             var cardName = cardDetails.Map.CardName.Text;
             var cardRarityRare = cardDetails.Map.CardRarityRare.Text;
-            // Assert to make sure everything is correct for Mortar
+            // Assert to make sure everything is correct for Rocket
             Assert.AreEqual("Rocket", cardName);
             Assert.AreEqual("Spell", category);
             Assert.AreEqual("Arena 6", arena);
             Assert.AreEqual("Rare", cardRarityRare);
+        }
+
+
+        [Test]
+        public void Graveyard_is_on_Cards_page()
+        {
+            // Wait 4 seconds
+            Thread.Sleep(4000);
+            // Maximize screen
+            driver.Manage().Window.Maximize();
+            Thread.Sleep(4000);
+            // click cards link in header nav
+            var cardsPage = new CardsPage(driver);
+            // Wait 3 seconds
+            Thread.Sleep(3000);
+            // Go to cards page and  Get card by name
+            var graveyard = cardsPage.GoTo().GetCardByName("Graveyard");
+            // Maximize screen and 4 second wait time
+            driver.Manage().Window.Maximize();
+            // Wait 4 seconds
+            Thread.Sleep(4000);
+            // Test to see if Graveyard is displayed
+            Assert.That(graveyard.Displayed);
+        }
+
+        [Test]
+        public void Graveyard_headers_are_correct_on_Card_Details_page()
+        {
+            Thread.Sleep(4000);
+            // Maximize screen and 4 second wait time
+            driver.Manage().Window.Maximize();
+            Thread.Sleep(4000);
+            // Click on Graveyard and get card details
+            new CardsPage(driver).GoTo().GetCardByName("Graveyard").Click();
+            var cardDetails = new CardDetailsPage(driver);
+            //Fullscreen and 4 second wait time
+            driver.Manage().Window.Maximize();
+            Thread.Sleep(4000);
+            // Call method to split name and rarity in correct forms
+            var (category, arena) = cardDetails.GetCardCategory();
+            var cardName = cardDetails.Map.CardName.Text;
+            var cardRarityLegendary = cardDetails.Map.CardRarityLegendary.Text;
+            // Assert to make sure everything is correct for Graveyard
+            Assert.AreEqual("Graveyard", cardName);
+            Assert.AreEqual("Spell", category);
+            Assert.AreEqual("Arena 12", arena);
+            Assert.AreEqual("Legendary", cardRarityLegendary);
         }
     }
 }

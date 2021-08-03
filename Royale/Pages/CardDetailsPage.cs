@@ -37,17 +37,20 @@ namespace Royale.Pages
     // Grab cardCategory by CssSelector using class
     public IWebElement CardCategory => _driver.FindElement(By.CssSelector("[class*='card__rarity']"));
 
-    // Grab cardRarity common by CssSelector using class
+    // Grab cardRarity  => common by CssSelector using class
     public IWebElement CardRarityCommon => _driver.FindElement(By.CssSelector("[class*='card__common']"));
 
-     // Grab cardRarity epic by CssSelector using class
+     // Grab cardRarity => rare by CssSelector using class
       public IWebElement CardRarityRare => _driver.FindElement(By.CssSelector("[class*='card__rare']"));
 
 
-     // Grab cardRarity epic by CssSelector using class
+     // Grab cardRarity => epic by CssSelector using class
      public IWebElement CardRarityEpic => _driver.FindElement(By.CssSelector("[class*='card__epic']"));
 
-  }
+     // Grab cardRarity => legendary by CssSelector using class
+     public IWebElement CardRarityLegendary => _driver.FindElement(By.CssSelector("[class*='card__legendary']"));
+
+    }
 
 
 
