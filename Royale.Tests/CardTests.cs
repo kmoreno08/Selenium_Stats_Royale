@@ -90,7 +90,7 @@ namespace Royale.Tests
       driver.Manage().Window.FullScreen();
       // Wait 4 seconds
       Thread.Sleep(4000);
-      // Test to see if Ice spirit is displayed
+      // Test to see if Electro Giant is displayed
       Assert.That(electroGiant.Displayed);
     }
 
@@ -102,7 +102,7 @@ namespace Royale.Tests
       // Maximize screen and 4 second wait time
       driver.Manage().Window.FullScreen();
       Thread.Sleep(4000);
-      // Click on Ice Spirit and get card details
+      // Click on Electro Giant and get card details
       new CardsPage(driver).GoTo().GetCardByName("Electro+Giant").Click();
       var cardDetails = new CardDetailsPage(driver);
       //Fullscreen and 4 second wait time
@@ -112,11 +112,60 @@ namespace Royale.Tests
       var (category, arena) = cardDetails.GetCardCategory();
       var cardName = cardDetails.Map.CardName.Text;
       var cardRarityEpic = cardDetails.Map.CardRarityEpic.Text;
-      // Assert to make sure everything is correct for Ice Spirit
+      // Assert to make sure everything is correct for Electro Giant
       Assert.AreEqual("Electro Giant", cardName);
       Assert.AreEqual("Troop", category);
       Assert.AreEqual("Arena 11", arena);
       Assert.AreEqual("Epic", cardRarityEpic);
+    }
+
+    [Test]
+    public void Mortar_is_on_Cards_page()
+    {
+      // Wait 4 seconds
+      Thread.Sleep(4000);
+      // Maximize screen
+      driver.Manage().Window.FullScreen();
+      Thread.Sleep(4000);
+      // click cards link in header nav
+      var cardsPage = new CardsPage(driver);
+      // Wait 3 seconds
+      Thread.Sleep(3000);
+      // Go to cards page and  Get card by name
+      var mortar = cardsPage.GoTo().GetCardByName("Mortar");
+      // Maximize screen and 4 second wait time
+      driver.Manage().Window.FullScreen();
+      // Wait 4 seconds
+      Thread.Sleep(4000);
+      // Test to see if Mortar is displayed
+      Assert.That(mortar.Displayed);
+    }
+
+    [Test]
+    public void Mortar_headers_are_correct_on_Card_Details_page()
+    {
+      
+
+      Thread.Sleep(4000);
+      // Maximize screen and 4 second wait time
+      driver.Manage().Window.FullScreen();
+      Thread.Sleep(4000);
+      // Click on Ice Spirit and get card details
+      new CardsPage(driver).GoTo().GetCardByName("Mortar").Click();
+      var cardDetails = new CardDetailsPage(driver);
+      //Fullscreen and 4 second wait time
+      driver.Manage().Window.FullScreen();
+      Thread.Sleep(4000);
+      // Call method to split name and rarity in correct forms
+      var (category, arena) = cardDetails.GetCardCategory();
+      var cardName = cardDetails.Map.CardName.Text;
+      var cardRarityCommon = cardDetails.Map.CardRarityCommon.Text;
+      // Assert to make sure everything is correct for Mortar
+      Assert.AreEqual("Mortar", cardName);
+      Assert.AreEqual("Building", category);
+      Assert.AreEqual("Arena 6", arena);
+      Assert.AreEqual("Common", cardRarityCommon);
+            Console.WriteLine(cardRarityCommon);
     }
   }
 }
