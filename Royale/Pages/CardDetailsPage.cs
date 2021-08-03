@@ -40,8 +40,12 @@ namespace Royale.Pages
     // Grab cardRarity common by CssSelector using class
     public IWebElement CardRarityCommon => _driver.FindElement(By.CssSelector("[class*='card__common']"));
 
-    // Grab cardRarity epic by CssSelector using class
-    public IWebElement CardRarityEpic => _driver.FindElement(By.CssSelector("[class*='card__epic']"));
+     // Grab cardRarity epic by CssSelector using class
+      public IWebElement CardRarityRare => _driver.FindElement(By.CssSelector("[class*='card__rare']"));
+
+
+     // Grab cardRarity epic by CssSelector using class
+     public IWebElement CardRarityEpic => _driver.FindElement(By.CssSelector("[class*='card__epic']"));
 
 
   }
