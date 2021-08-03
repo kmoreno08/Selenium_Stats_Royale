@@ -166,26 +166,26 @@ namespace Royale.Tests
     }
 
 
-        [Test]
-        public void Bomb_Tower_is_on_Cards_page()
-        {
-            // Wait 4 seconds
-            Thread.Sleep(4000);
-            // Maximize screen
-            driver.Manage().Window.FullScreen();
-            Thread.Sleep(4000);
-            // click cards link in header nav
-            var cardsPage = new CardsPage(driver);
-            // Wait 3 seconds
-            Thread.Sleep(3000);
-            // Go to cards page and  Get card by name
-            var bombTower = cardsPage.GoTo().GetCardByName("Bomb+Tower");
-            // Maximize screen and 4 second wait time
-            driver.Manage().Window.FullScreen();
-            // Wait 4 seconds
-            Thread.Sleep(4000);
-            // Test to see if Mortar is displayed
-            Assert.That(bombTower.Displayed);
+    [Test]
+    public void Bomb_Tower_is_on_Cards_page()
+      {
+        // Wait 4 seconds
+         Thread.Sleep(4000);
+         // Maximize screen
+         driver.Manage().Window.FullScreen();
+         Thread.Sleep(4000);
+         // click cards link in header nav
+         var cardsPage = new CardsPage(driver);
+         // Wait 3 seconds
+         Thread.Sleep(3000);
+         // Go to cards page and  Get card by name
+         var bombTower = cardsPage.GoTo().GetCardByName("Bomb+Tower");
+         // Maximize screen and 4 second wait time
+         driver.Manage().Window.FullScreen();
+         // Wait 4 seconds
+         Thread.Sleep(4000);
+         // Test to see if Mortar is displayed
+         Assert.That(bombTower.Displayed);
         }
 
         [Test]
@@ -209,6 +209,52 @@ namespace Royale.Tests
             Assert.AreEqual("Bomb Tower", cardName);
             Assert.AreEqual("Building", category);
             Assert.AreEqual("Arena 12", arena);
+            Assert.AreEqual("Rare", cardRarityRare);
+        }
+
+        [Test]
+        public void Rocket_is_on_Cards_page()
+        {
+            // Wait 4 seconds
+            Thread.Sleep(4000);
+            // Maximize screen
+            driver.Manage().Window.FullScreen();
+            Thread.Sleep(4000);
+            // click cards link in header nav
+            var cardsPage = new CardsPage(driver);
+            // Wait 3 seconds
+            Thread.Sleep(3000);
+            // Go to cards page and  Get card by name
+            var rocket = cardsPage.GoTo().GetCardByName("Rocket");
+            // Maximize screen and 4 second wait time
+            driver.Manage().Window.FullScreen();
+            // Wait 4 seconds
+            Thread.Sleep(4000);
+            // Test to see if Mortar is displayed
+            Assert.That(rocket.Displayed);
+        }
+
+        [Test]
+        public void Rocket_headers_are_correct_on_Card_Details_page()
+        {
+            Thread.Sleep(4000);
+            // Maximize screen and 4 second wait time
+            driver.Manage().Window.FullScreen();
+            Thread.Sleep(4000);
+            // Click on Rocket and get card details
+            new CardsPage(driver).GoTo().GetCardByName("Rocket").Click();
+            var cardDetails = new CardDetailsPage(driver);
+            //Fullscreen and 4 second wait time
+            driver.Manage().Window.FullScreen();
+            Thread.Sleep(4000);
+            // Call method to split name and rarity in correct forms
+            var (category, arena) = cardDetails.GetCardCategory();
+            var cardName = cardDetails.Map.CardName.Text;
+            var cardRarityRare = cardDetails.Map.CardRarityRare.Text;
+            // Assert to make sure everything is correct for Mortar
+            Assert.AreEqual("Rocket", cardName);
+            Assert.AreEqual("Spell", category);
+            Assert.AreEqual("Arena 6", arena);
             Assert.AreEqual("Rare", cardRarityRare);
         }
     }

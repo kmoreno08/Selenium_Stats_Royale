@@ -47,7 +47,6 @@ namespace Royale.Pages
      // Grab cardRarity epic by CssSelector using class
      public IWebElement CardRarityEpic => _driver.FindElement(By.CssSelector("[class*='card__epic']"));
 
-
   }
 
 
